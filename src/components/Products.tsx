@@ -9,14 +9,16 @@ const products = [
         description: "Premium sports event management and digital media broadcasting. Bridging the gap between local talent and global audiences.",
         icon: <Trophy className="w-8 h-8 text-[#20B2AA]" />,
         color: "from-[#20B2AA]/20 to-transparent",
-        border: "group-hover:border-[#20B2AA]/50"
+        border: "group-hover:border-[#20B2AA]/50",
+        href : "http://aanspiremedia.com "
     },
     {
         title: "GetGround.in",
         description: "The ultimate cricket ground booking web application. Seamless scheduling, real-time availability, and secure payments.",
         icon: <Code2 className="w-8 h-8 text-emerald-400" />,
         color: "from-emerald-400/20 to-transparent",
-        border: "group-hover:border-emerald-400/50"
+        border: "group-hover:border-emerald-400/50",
+        href: "http://getground.in"
     },
     {
         title: "Aanspire Auction Engine",
