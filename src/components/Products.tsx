@@ -106,16 +106,18 @@ export default function Products() {
                                     {product.description}
                                 </p>
 
-                                {!product.comingSoon && (
-                                    <div className="mt-auto">
-                                        <button className="text-sm font-semibold text-white/70 group-hover:text-white transition-colors flex items-center gap-2">
-                                            <span className="relative">
-                                                View Product
-                                                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white/30 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                )}
+                                
+                                {!product.comingSoon && product.href && (
+                                     <div className="mt-auto">
+                                     <a href={product.href} target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-white/70 group-hover:text-white transition-colors flex items-center gap-2 after:absolute after:inset-0">
+                                     <span className="relative">
+                                             View Product
+                                     <span className="absolute bottom-0 left-0 w-full h-[1px] bg-white/30 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                                     </span>
+                                     </a>
+                                   </div>
+                                  )}
+
                             </div>
                         </motion.div>
                     ))}
