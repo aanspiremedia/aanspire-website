@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} antialiased bg-[#05080a] text-white selection:bg-[#20B2AA]/30 selection:text-white`}>
+      <body suppressHydrationWarning className={`${inter.className} antialiased bg-[#05080a] text-white selection:bg-[#20B2AA]/30 selection:text-white`}>
         <Navbar />
         {children}
         <Footer />
